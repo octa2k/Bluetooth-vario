@@ -129,10 +129,10 @@ enum TYPE_BT_SENTENCES
 typedef struct
 {
   char signature[11] = "BTVARIO" xstr(VARIO_VERSION);
-  float p0 = 101325;              //Pressure at sea level (Pa)
+  float p0 = 101325;              //Pressure at sea level 1013,25 (Pa)
   TYPE_BT_SENTENCES type_sentences = TYPE_BT_SENTENCES::LK8000;
   float vario_climb_rate_start = 0.4;    //minimum climb beeping value(ex. start climbing beeping at 0.4m/s)
-  float vario_sink_rate_start = -200.0;    //maximum sink beeping value (ex. start sink beep at -1.1m/s)
+  float vario_sink_rate_start = -230.0;    //maximum sink beeping value (ex. start sink beep at -1.1m/s) now ar 1.5
 } SETTINGS;
 SETTINGS settings;
 
